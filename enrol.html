@@ -1,10 +1,19 @@
 <div align="center">
-
-<p><?php print_string("paymentrequired") ?></p>
-<p><b><?php echo $instancename; ?></b></p>
-<p><b><?php echo get_string("cost").": {$instance->currency} {$localisedcost}"; ?></b></p>
-<p><img alt="<?php print_string('accepted', 'enrol_mercadopago') ?>" src="<?php echo "$CFG->wwwroot/enrol/mercadopago/pix/mercadopago.png"?>" /></p>
-<p><?php print_string("paymentinstant") ?></p>
+    <p><?php print_string("paymentrequired") ?></p>
+    <div class="d-flex row row-cols-1 row-cols-md-2 align-items-center py-2">
+        <div class="col py-2">
+            <picture>
+                <img
+                    src="<?php echo "$CFG->wwwroot/enrol/mercadopago/pix/mercado-pago.svg" ?>"
+                    height="50" />
+            </picture>
+        </div>
+        <div class="col">
+            <p><b><?php echo $instancename; ?></b></p>
+            <p><b><?php echo get_string("cost").": {$instance->currency} {$localisedcost}"; ?></b></p>
+            <p><?php print_string("paymentinstant") ?></p>
+        </div>
+    </div>
 
 <div class="cho-container">
 </div>
